@@ -1,5 +1,7 @@
 public Class CompTest
 {
+public static void main(String args[]);
+{
     List<Integerr>list=new ArrayList<Integerr>();
     System.out.println("Enter any Five three digits value");
     Scanner sc=new Scanner(System.in);
@@ -16,6 +18,7 @@ public Class CompTest
     {
         System.out.println(i);
     }
+}
 }
 
 public class Comp implements Comparator<Integer>
