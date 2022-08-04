@@ -22,18 +22,18 @@ Class TrainEngine()
          String engineType;
         void setEngine() {
 
-           // Accessing the carType property of Car
+           // Accessing the TrainType property of train
             if(Train.this.TrainType.equals("SuperFast")){
 
-                // Invoking method getCarName() of Car
-                if(Car.this.getCarName().equals("Premium")) {
+                // Invoking method getCarName() of Train
+                if(Train.this.getTrainName().equals("Premium")) {
                     this.engineType = "WAP7";
                 } 
                 
-                else if(Car.this.getCarName().equals("NonPremium"))
+                else if(Train.this.getTrainName().equals("NonPremium"))
                     this.engineType="WAP5";
                     
-                    else if(Car.this.getCarName().equals("Freight"))
+                    else if(Train.this.getTrainName().equals("Freight"))
                     this.engineType="WDP3"
                     
                     else { 
@@ -58,18 +58,18 @@ Class TrainEngine()
 public class Main {
     public static void main(String[] args) {
 
-// create an object of the outer class Car
+// create an object of the outer class Train
         Train train1 = new Train("NonPremium", 21225 "Superfast");
 
         // create an object of inner class using the outer class
         Train.Engine engine = Train1.new Engine();
         engine.setEngine();
-        System.out.println("Engine Type for 8WD= " + engine.getEngineType());
+        System.out.println("Engine Type for NonPremium SuperfastTrains= " + engine.getEngineType());
 
         Train train2 = new Train("Premium", 22131,"SuperFast");
         Train.Engine c2engine = Train2.new Engine();
         c2engine.setEngine();
-        System.out.println("Engine Type for SuperFast = " + c2engine.getEngineType());
+        System.out.println("Engine Type for Premium SuperFast Trains = " + c2engine.getEngineType());
     }
 }
 }
